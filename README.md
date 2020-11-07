@@ -1,6 +1,9 @@
 # Curso : React JS ⭐Desde Cero! Hooks, Redux, Context, Firebase y más!
 
-> Ultima Aula Assistida : 38
+<h2 align="center">
+    <img width="200px" alt="CRUDSimples" title="#CRUDSimples" src="./assets/react-logotipo.png" />
+</h2>
+> Ultima Aula Assistida : 45
 
 ### Seção 1 : Introdução
 
@@ -9,7 +12,7 @@
 ### Seção 3 : React Fundamentos
 
 <h3 align="left">
-   Seção 4 : CRUD HOOKS - Prática
+   Seção 4 : CRUD HOOKS - Prática ( FINALIZADO )
 </h3>
 <p align="center">
     Esta aplicação de CRUD foi desenvolvida usando arrays e hooks para manipulação de dados em memória apenas, não utiliza banco de dados.
