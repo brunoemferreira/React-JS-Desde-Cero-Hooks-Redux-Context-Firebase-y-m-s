@@ -15,7 +15,7 @@
     Esta aplicação de CRUD foi desenvolvida usando arrays e hooks para manipulação de dados em memória apenas, não utiliza banco de dados.
 </p>
 <h2 align="center">
-    <img width="500px" alt="CRUDSimples" title="#CRUDSimples" src="./assets/crud-simples-array.png" />
+    <img width="700px" alt="CRUDSimples" title="#CRUDSimples" src="./assets/crud-simples-array.png" />
 </h2>
 
 ```bash
