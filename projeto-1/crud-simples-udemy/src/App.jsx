@@ -5,6 +5,7 @@ function App() {
   const [tarefa, setTarefa] = useState(''); 
   const [tarefas, setTarefas] = useState([]);
   const [modoEdicao, setModoEdicao] = useState(false);
+  const [id, setId] = useState('');
 
   const gravarTarefa = e => {
     e.preventDefault()
@@ -33,12 +34,28 @@ function App() {
     setTarefas(arrayFiltrado);
 
     }
-
-    const editarTarefa = item => {
+    
+    const editar = item => {
       setModoEdicao(true);
       setTarefa(item.nomeTarefa);
+      setId(item.id);
     }
+    
 
+    const editarTarefa = e => {
+      e.preventDefault();
+      // Verifica se o campo está vazio
+      if(!tarefa.trim()) {
+        console.log('Elemento Vazio')
+        return
+    }
+      const arrayEditado = tarefas.map(item => item.id === id ? { id, nomeTarefa:tarefa} : item)
+
+      setTarefas(arrayEditado);
+      setModoEdicao(false);
+      setTarefa('');
+      setId('');
+  }
   return (
     <div className="container mt-5">
       <h1 className="text-center">CRUD Simples</h1>
@@ -59,7 +76,7 @@ function App() {
                 </button>
               <button 
                 className="btn btn-warning btn-sm float-right"
-                onClick={() => editarTarefa(item)}
+                onClick={() => editar(item)}
               >
                 Editar
               </button>
@@ -72,7 +89,7 @@ function App() {
           <h4 className="text-center">
             { modoEdicao ? 'Editar Tarefa' : 'Inserir Tarefa' }
           </h4>
-          <form onSubmit={gravarTarefa} >
+          <form onSubmit={ modoEdicao ? editarTarefa : gravarTarefa} >
             <input 
              type="text" 
              className="form-control mb-2"
