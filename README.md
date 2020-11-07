@@ -8,13 +8,37 @@
 
 ### Seção 3 : React Fundamentos
 
-### Seção 4 : CRUD HOOKS - Prática
+<h3 align="left">
+   Seção 4 : CRUD HOOKS - Prática
+</h3>
+<p align="center">
+    Esta aplicação de CRUD foi desenvolvida usando arrays e hooks para manipulação de dados em memória apenas, não utiliza banco de dados.
+</p>
+<h2 align="center">
+    <img width="500px" alt="CRUDSimples" title="#CRUDSimples" src="./assets/crud-simples-array.png" />
+</h2>
 
-```batch
-Pasta do Projeto
-
+```bash
+# Pasta do Projeto
 |- projeto-1
   |- crud-simples-udemy
+
+# Clone este repositório
+$ git clone https://github.com/brunoemferreira/React-JS-Desde-Cero-Hooks-Redux-Context-Firebase-y-m-s.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd projeto-1
+
+# vá para a pasta crud-simples-udemy
+$ cd crud-simples-udemy
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação
+$ npm start
+
+# O aplicação iniciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
 ### Seção 5 :
