@@ -4,6 +4,7 @@ import shortid from 'shortid';
 function App() {
   const [tarefa, setTarefa] = useState(''); 
   const [tarefas, setTarefas] = useState([]);
+  const [modoEdicao, setModoEdicao] = useState(false);
 
   const gravarTarefa = e => {
     e.preventDefault()
@@ -33,12 +34,10 @@ function App() {
 
     }
 
-    const editarTarefa = id => {
-      console.log(id);
+    const editarTarefa = item => {
+      setModoEdicao(true);
+      setTarefa(item.nomeTarefa);
     }
-
-
-  
 
   return (
     <div className="container mt-5">
@@ -60,7 +59,7 @@ function App() {
                 </button>
               <button 
                 className="btn btn-warning btn-sm float-right"
-                onClick={() => editarTarefa(item.id)}
+                onClick={() => editarTarefa(item)}
               >
                 Editar
               </button>
@@ -70,7 +69,9 @@ function App() {
           </ul>
         </div>
         <div className="col-4">
-          <h4 className="text-center">Formulário</h4>
+          <h4 className="text-center">
+            { modoEdicao ? 'Editar Tarefa' : 'Inserir Tarefa' }
+          </h4>
           <form onSubmit={gravarTarefa} >
             <input 
              type="text" 
@@ -78,7 +79,12 @@ function App() {
              placeholder="Insira a Tarefa"
              onChange={ e => setTarefa(e.target.value)}
              value={tarefa}/>
-             <button className="btn btn-dark btn-block" type="submit">Inserir</button>
+             {
+               modoEdicao ? (
+                 <button className="btn btn-warning btn-block" type="submit">Editar</button>
+               ) : ( <button className="btn btn-dark btn-block" type="submit">Inserir</button> )
+
+             }
           </form>
           
         </div>
