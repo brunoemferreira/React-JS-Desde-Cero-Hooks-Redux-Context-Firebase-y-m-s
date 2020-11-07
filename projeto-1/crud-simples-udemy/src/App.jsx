@@ -5,7 +5,6 @@ function App() {
   const [tarefa, setTarefa] = useState(''); 
   const [tarefas, setTarefas] = useState([]);
 
-
   const gravarTarefa = e => {
     e.preventDefault()
     // Verifica se o campo está vazio
@@ -23,6 +22,23 @@ function App() {
     // Limpa a Tarefa
     setTarefa('');
   }
+   
+  const excluirTarefa = id => {
+    /* É gerado um novo Array Filtrado das tarefas trazendo todas as 
+       tarefas diferentes da que esta sendo passada no id, sendo assim 
+       ao setar as tarefas ele manda tudo menos o item do id selecionado
+     */
+    const arrayFiltrado = tarefas.filter(item => item.id !== id );
+    setTarefas(arrayFiltrado);
+
+    }
+
+    const editarTarefa = id => {
+      console.log(id);
+    }
+
+
+  
 
   return (
     <div className="container mt-5">
@@ -36,8 +52,18 @@ function App() {
              tarefas.map(item => (
             <li className="list-group-item" key={item.id}>
               <span className="lead">{item.nomeTarefa}</span>
-              <button className="btn btn-danger btn-sm float-right mx-2">Excluir</button>
-              <button className="btn btn-warning btn-sm float-right">Editar</button>
+              <button 
+                className="btn btn-danger btn-sm float-right mx-2"
+                onClick={() => excluirTarefa(item.id)}
+                >
+                  Excluir
+                </button>
+              <button 
+                className="btn btn-warning btn-sm float-right"
+                onClick={() => editarTarefa(item.id)}
+              >
+                Editar
+              </button>
             </li>
              ))
            }
