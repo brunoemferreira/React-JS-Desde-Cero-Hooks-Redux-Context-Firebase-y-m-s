@@ -12,6 +12,7 @@
 
 ### Seção 3 : React Fundamentos
 
+<!-- Seção 4 : CRUD HOOKS - Prática ( FINALIZADO ) -->
 <h3 align="left">
    Seção 4 : CRUD HOOKS - Prática ( FINALIZADO )
 </h3>
@@ -45,34 +46,66 @@ $ npm start
 # O aplicação iniciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
-### Seção 5 :
+<!-- Seção 5 : PROPS - Cominicação entre componentes ( FINALIZADO ) -->
+<h3 align="left">
+   Seção 5 : PROPS - Cominicação entre componentes ( FINALIZADO )
+</h3>
+<p align="center">
+    Esta aplicação foi desenvolvida para estudo da comunicação entre componentes utilizando props 
+</p>
+<h2 align="center">
+    <img width="700px" alt="CRUDSimples" title="#CRUDSimples" src="./assets/props-udemy-1.png" />
+</h2>
 
-### Seção 6 :
+```bash
+# Pasta do Projeto
+|- projeto-1
+  |- props-udemy-1
 
-### Seção 7 :
+# Clone este repositório
+$ git clone https://github.com/brunoemferreira/React-JS-Desde-Cero-Hooks-Redux-Context-Firebase-y-m-s.git
 
-### Seção 8 :
+# Acesse a pasta do projeto no terminal/cmd
+$ cd projeto-1
 
-### Seção 9 :
+# vá para a pasta crud-simples-udemy
+$ cd props-udemy-1
 
-### Seção 10 :
+# Instale as dependências
+$ npm install
 
-### Seção 11 :
+# Execute a aplicação
+$ npm start
 
-### Seção 12 :
+# O aplicação iniciará na porta:3000 - acesse <http://localhost:3000>
+```
 
-### Seção 13 :
+<!-- Seção 6 : REACT ROUTER - Rotas (  ) -->
 
-### Seção 14 :
+<!-- Seção 7 : -->
 
-### Seção 15 :
+<!-- Seção 8 : -->
 
-### Seção 16 :
+<!-- Seção 9 : -->
 
-### Seção 17 :
+<!-- Seção 10 -->
 
-### Seção 18 :
+<!-- Seção 11 -->
 
-### Seção 19 :
+<!-- Seção 12 -->
 
-### Seção 20 :
+<!-- Seção 13 -->
+
+<!-- Seção 14 -->
+
+<!-- Seção 15 -->
+
+<!-- Seção 16 -->
+
+<!-- Seção 17 -->
+
+<!-- Seção 18 -->
+
+<!-- Seção 19 -->
+
+<!-- Seção 20 -->
