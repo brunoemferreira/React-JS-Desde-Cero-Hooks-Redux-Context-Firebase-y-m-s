@@ -3,6 +3,7 @@
 <h2 align="center">
     <img width="200px" alt="CRUDSimples" title="#CRUDSimples" src="./assets/react-logotipo.png" />
 </h2>
+
 > Ultima Aula Assistida : 45
 
 ### Seção 1 : Introdução
