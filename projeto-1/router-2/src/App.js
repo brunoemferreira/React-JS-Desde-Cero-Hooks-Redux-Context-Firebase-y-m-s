@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-rout
 import Contato from './components/Contato';
 import Sobre from './components/Sobre';
 import Inicio from './components/Inicio';
+import User from './components/User';
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
          <h1>Navbar...</h1>
          <hr/>
          <Switch>
-            <Route path="/" exact><Inicio/></Route> 
+            <Route path="/sobre/:id"><User/></Route> 
             <Route path="/contato"><Contato/></Route>
             <Route path="/sobre"><Sobre/></Route>
+            <Route path="/" exact><Inicio/></Route> 
          </Switch>
        </div>
     </Router>
