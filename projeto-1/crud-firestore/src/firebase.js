@@ -1,6 +1,7 @@
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+
+  const firebaseConfig = {
     apiKey: "AIzaSyDyI1hyd0LdRyqq4uMYXdorP46UjQ48yCE",
     authDomain: "crud-udemy-react-3ee68.firebaseapp.com",
     databaseURL: "https://crud-udemy-react-3ee68.firebaseio.com",
@@ -10,5 +11,6 @@
     appId: "1:863058122765:web:d0e0c47337cf6e1d9d9d44"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+firebase.initializeApp(firebaseConfig);
+
+export {firebase}
