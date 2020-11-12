@@ -54,7 +54,7 @@ $ npm start
     Esta aplicação foi desenvolvida para estudo da comunicação entre componentes utilizando props 
 </p>
 <h2 align="center">
-    <img width="700px" alt="CRUDSimples" title="#CRUDSimples" src="./assets/props-udemy-1.png" />
+    <img width="700px" alt="props-udemy-1" title="#props-udemy-1" src="./assets/props-udemy-1.png" />
 </h2>
 
 ```bash
@@ -80,7 +80,39 @@ $ npm start
 # O aplicação iniciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
-<!-- Seção 6 : REACT ROUTER - Rotas (  ) -->
+<!-- Seção 6 : REACT ROUTER - Rotas ( FINALIZADO ) -->
+<h3 align="left">
+   Seção 6 : REACT ROUTER - Rotas ( FINALIZADO )
+</h3>
+<p align="center">
+    Esta aplicação foi desenvolvida para estudo de Rotas e consultas em APIS de Terceiros.
+</p>
+<h2 align="center">
+    <img width="700px" alt="Router2" title="#Router2" src="./assets/router-2.png" />
+</h2>
+
+```bash
+# Pasta do Projeto
+|- projeto-1
+  |- router-2
+
+# Clone este repositório
+$ git clone https://github.com/brunoemferreira/React-JS-Desde-Cero-Hooks-Redux-Context-Firebase-y-m-s.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd projeto-1
+
+# vá para a pasta crud-simples-udemy
+$ cd router-2
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação
+$ npm start
+
+# O aplicação iniciará na porta:3000 - acesse <http://localhost:3000>
+```
 
 <!-- Seção 7 : -->
 
