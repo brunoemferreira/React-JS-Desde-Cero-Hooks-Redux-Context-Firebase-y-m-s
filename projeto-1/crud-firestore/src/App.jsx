@@ -1,7 +1,10 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { firebase } from './firebase';
 
 function App() {
+
+  const [tarefas, setTarefas] = useState([]);
+  
 
   useEffect(() => {
      
@@ -13,7 +16,9 @@ function App() {
           // da função de obter dados 
           const db = firebase.firestore();
           const data = await db.collection('tarefas').get()
-          console.log(data);
+          const arrayData = await data.docs.map(doc => ({id: doc.id, ...doc.data()}))
+          setTarefas(arrayData);
+          console.log(arrayData);
       } catch(error) {
          console.log(error);
       }
@@ -22,8 +27,23 @@ function App() {
   }, [])
 
   return (
-    <div className="container">
-       Teste
+    <div className="container mt-3">
+       <div className="row">
+         <div className="col-md-6">
+            <ul className="list-group">
+              {
+                tarefas.map(item => (
+                  <li className="list-group-item" key={item.id}>
+                    {item.name}
+                  </li>
+                ))
+              }
+            </ul>
+         </div>
+         <div className="col-md-6">
+            Formulario
+         </div>
+       </div>
     </div>
   );
 }
