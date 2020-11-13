@@ -2,13 +2,13 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 
   const firebaseConfig = {
-    apiKey: "AIzaSyDyI1hyd0LdRyqq4uMYXdorP46UjQ48yCE",
-    authDomain: "crud-udemy-react-3ee68.firebaseapp.com",
-    databaseURL: "https://crud-udemy-react-3ee68.firebaseio.com",
-    projectId: "crud-udemy-react-3ee68",
-    storageBucket: "crud-udemy-react-3ee68.appspot.com",
-    messagingSenderId: "863058122765",
-    appId: "1:863058122765:web:d0e0c47337cf6e1d9d9d44"
+    apiKey: "AIzaSyA6SlMVQzoCsQZF4yYFnz05NQPTxz_Tfec",
+    authDomain: "crud-udemy-react-943ed.firebaseapp.com",
+    databaseURL: "https://crud-udemy-react-943ed.firebaseio.com",
+    projectId: "crud-udemy-react-943ed",
+    storageBucket: "crud-udemy-react-943ed.appspot.com",
+    messagingSenderId: "288203229607",
+    appId: "1:288203229607:web:4b26f3646cbf758a7b0e82"
   };
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
