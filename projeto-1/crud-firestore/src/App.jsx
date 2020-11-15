@@ -34,6 +34,22 @@ function App() {
        return
      }
 
+     try {
+       const db = firebase.firestore()
+       const novaTarefa = {
+         name: tarefa,
+         data: Date.now()
+       }
+       const data = await db.collection('tarefas').add(novaTarefa)
+       setTarefas([
+         ...tarefas,
+         {...novaTarefa, id: data.id}
+       ])
+       setTarefa('');
+
+     } catch (error) {
+       
+     }
      console.log(tarefa);
   }
 
