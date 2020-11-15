@@ -5,9 +5,10 @@ function App() {
 
   const [tarefas, setTarefas] = useState([]);
   const [tarefa, setTarefa] = useState('');
+  const [modoEdicao, setModoEdicao] = useState(false);
 
   useEffect(() => {
-     
+    // Traz os dados do banco para o app 
     const obterDados = async () => {
       try {
           // declarar a chamada di firestore como constante evita que 
@@ -26,6 +27,7 @@ function App() {
     obterDados()
   }, [])
 
+  // Cadastra Nova Tarefa 
   const cadastrar = async (e) => {
      e.preventDefault();
 
@@ -52,7 +54,8 @@ function App() {
      }
      console.log(tarefa);
   }
-
+  
+  // Exclui a Tarefa 
   const excluir = async (id) => {
     try {
        const db = firebase.firestore()
@@ -84,7 +87,7 @@ function App() {
             </ul>
          </div>
          <div className="col-md-6">
-           <h3>Formulario</h3>  
+           <h3>Formulário</h3>  
            <form onSubmit={cadastrar}>
               <input type="text"
                      placeholder="Insira uma tarefa"
