@@ -53,6 +53,19 @@ function App() {
      console.log(tarefa);
   }
 
+  const excluir = async (id) => {
+    try {
+       const db = firebase.firestore()
+       await db.collection('tarefas').doc(id).delete();
+
+       const arrayFiltrado = tarefas.filter(item => item.id !== id);
+       setTarefas(arrayFiltrado);
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  
   return (
     <div className="container mt-3">
        <div className="row">
@@ -62,6 +75,9 @@ function App() {
                 tarefas.map(item => (
                   <li className="list-group-item" key={item.id}>
                     {item.name}
+                    <button className="btn btn-danger btn-sm float-right"
+                            onClick={() => excluir(item.id)}   >Excluir</button>
+                    <button className="btn btn-warning btn-sm float-right mr-2">Editar</button>
                   </li>
                 ))
               }
