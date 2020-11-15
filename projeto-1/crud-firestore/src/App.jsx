@@ -4,7 +4,7 @@ import { firebase } from './firebase';
 function App() {
 
   const [tarefas, setTarefas] = useState([]);
-  
+  const [tarefa, setTarefa] = useState('');
 
   useEffect(() => {
      
@@ -26,6 +26,17 @@ function App() {
     obterDados()
   }, [])
 
+  const cadastrar = async (e) => {
+     e.preventDefault();
+
+     if(!tarefa.trim()) {
+       console.log('está vazio')
+       return
+     }
+
+     console.log(tarefa);
+  }
+
   return (
     <div className="container mt-3">
        <div className="row">
@@ -41,7 +52,16 @@ function App() {
             </ul>
          </div>
          <div className="col-md-6">
-            Formulario
+           <h3>Formulario</h3>  
+           <form onSubmit={cadastrar}>
+              <input type="text"
+                     placeholder="Insira uma tarefa"
+                     className="form-control mb-2"
+                     onChange={e => setTarefa(e.target.value)}
+                     value={tarefa}/> 
+               <button className="btn btn-dark btn-block"
+                        type="submit">Cadastrar</button>                  
+           </form> 
          </div>
        </div>
     </div>
