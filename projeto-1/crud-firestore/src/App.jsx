@@ -80,7 +80,7 @@ function App() {
     e.preventDefault();
 
     if(!tarefa.trim()) {
-      console.log('Está vazio')
+      console.log('Está Vazio')
       return
     }
     try {

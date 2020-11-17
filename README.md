@@ -116,6 +116,41 @@ $ npm start
 
 <!-- Seção 7 : -->
 
+<h3 align="left">
+   Seção 7 : CRUD FIRESTORE - Bases de Dados Firebase ( FINALIZADO )
+</h3>
+<p align="center">
+     Esta aplicação de CRUD foi desenvolvida usando o Banco Firestore para manipulação de dados.
+</p>
+<h2 align="center">
+    <img width="700px" alt="Router2" title="#Router2" src="./assets/crud-firestore.png" />
+</h2>
+
+```bash
+# Pasta do Projeto
+|- projeto-1
+  |- crud-firestore
+
+# Clone este repositório
+$ git clone https://github.com/brunoemferreira/React-JS-Desde-Cero-Hooks-Redux-Context-Firebase-y-m-s.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd projeto-1
+
+# vá para a pasta crud-simples-udemy
+$ cd crud-firestore
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação
+$ npm start
+
+# O aplicação iniciará na porta:3000 - acesse <http://localhost:3000>
+
+# Para essa aplicação é necessário possuir um email no google para ter acesso a todo Ecossistema do Firebase
+```
+
 <!-- Seção 8 : -->
 
 <!-- Seção 9 : -->
