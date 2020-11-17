@@ -155,7 +155,7 @@ $ npm start
 Autenticación con Firebase -->
 
 <h3 align="left">
-   Seção 7 : AUTH - Rotas Protegidas: Autenticação com Firebase 
+   Seção 8 : AUTH - Rotas Protegidas: Autenticação com Firebase 
 </h3>
 <p align="center">
      Texto
