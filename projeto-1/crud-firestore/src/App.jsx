@@ -78,6 +78,29 @@ function App() {
   
   const editar = async (e) => {
     e.preventDefault();
+
+    if(!tarefa.trim()) {
+      console.log('Está vazio')
+      return
+    }
+    try {
+       const db = firebase.firestore();
+       await db.collection('tarefas').doc(id).update({
+         name: tarefa
+       })
+       
+       const arrayEditado = tarefas.map( item => (
+         item.id === id ? {id: item.id, data: item.data, name: tarefa } : item
+       ))
+       setTarefas(arrayEditado);
+      
+       setModoEdicao(false);
+       setTarefa('');
+       setId('');
+
+    } catch (error) {
+      console.log(error)
+    } 
   }
 
   return (
