@@ -6,6 +6,7 @@ function App() {
   const [tarefas, setTarefas] = useState([]);
   const [tarefa, setTarefa] = useState('');
   const [modoEdicao, setModoEdicao] = useState(false);
+  const [id, setId] = useState('');
 
   useEffect(() => {
     // Traz os dados do banco para o app 
@@ -68,7 +69,17 @@ function App() {
       console.log(error);
     }
   }
+
+  const ativarEdicao = (item) => {
+     setModoEdicao(true);
+     setTarefa(item.name);
+     setId(item.id);
+  }
   
+  const editar = async (e) => {
+    e.preventDefault();
+  }
+
   return (
     <div className="container mt-3">
        <div className="row">
@@ -79,23 +90,36 @@ function App() {
                   <li className="list-group-item" key={item.id}>
                     {item.name}
                     <button className="btn btn-danger btn-sm float-right"
-                            onClick={() => excluir(item.id)}   >Excluir</button>
-                    <button className="btn btn-warning btn-sm float-right mr-2">Editar</button>
+                            onClick={() => excluir(item.id)}>Excluir</button>
+                    <button className="btn btn-warning btn-sm float-right mr-2"
+                            onClick={() => ativarEdicao(item)}>Editar</button>
                   </li>
                 ))
               }
             </ul>
          </div>
          <div className="col-md-6">
-           <h3>Formulário</h3>  
-           <form onSubmit={cadastrar}>
+           <h3>{
+                  modoEdicao ? 'Editar Tarefa' : 'Incluir Tarefa'
+               }
+           </h3>  
+           <form onSubmit={ modoEdicao ? editar : cadastrar}>
               <input type="text"
                      placeholder="Insira uma tarefa"
                      className="form-control mb-2"
                      onChange={e => setTarefa(e.target.value)}
                      value={tarefa}/> 
-               <button className="btn btn-dark btn-block"
-                        type="submit">Cadastrar</button>                  
+               <button 
+                  className= { 
+                      modoEdicao ? 'btn btn-warning btn-block' : 'btn btn-dark btn-block'
+                    }
+                        type="submit"
+                >
+                    {
+                       modoEdicao ? 'Editar' : 'Incluir'
+                    }     
+               </button>   
+                                      
            </form> 
          </div>
        </div>
