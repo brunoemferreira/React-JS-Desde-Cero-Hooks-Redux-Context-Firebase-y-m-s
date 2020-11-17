@@ -117,7 +117,7 @@ $ npm start
 <!-- Seção 7 : -->
 
 <h3 align="left">
-   Seção 7 : CRUD FIRESTORE - Bases de Dados Firebase ( FINALIZADO )
+   Seção 7 : CRUD FIRESTORE - Base de Dados Firebase ( FINALIZADO )
 </h3>
 <p align="center">
      Esta aplicação de CRUD foi desenvolvida usando o Banco Firestore para manipulação de dados.
