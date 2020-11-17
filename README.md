@@ -4,7 +4,28 @@
     <img width="200px" alt="CRUDSimples" title="#CRUDSimples" src="./assets/react-logotipo.png" />
 </h2>
 
-> Ultima Aula Assistida : 45
+<h4 align="center">
+   <a href="#secao1">Seção 1</a> |
+<a href="#secao2">Seção 2</a> |
+<a href="#secao3">Seção 3</a> |
+<a href="#secao4">Seção 4</a> | 
+<a href="#secao5">Seção 5</a> |
+<a href="#secao6">Seção 6</a> |
+<a href="#secao7">Seção 7</a> |
+<a href="#secao8">Seção 8</a> |
+<a href="#secao9">Seção 9</a> |
+<a href="#secao10">Seção 10</a> |
+<a href="#secao11">Seção 11</a> |
+<a href="#secao12">Seção 12</a> |
+<a href="#secao13">Seção 13</a> |
+<a href="#secao14">Seção 14</a> |
+<a href="#secao15">Seção 15</a> |
+<a href="#secao16">Seção 16</a> |
+<a href="#secao17">Seção 17</a> |
+<a href="#secao18">Seção 18</a> |
+<a href="#secao19">Seção 19</a> |
+<a href="#secao20">Seção 20</a> 
+</h4>
 
 ### Seção 1 : Introdução
 
@@ -13,7 +34,7 @@
 ### Seção 3 : React Fundamentos
 
 <!-- Seção 4 : CRUD HOOKS - Prática ( FINALIZADO ) -->
-<h3 align="left">
+<h3 align="left" id="secao4">
    Seção 4 : CRUD HOOKS - Prática ( FINALIZADO )
 </h3>
 <p align="center">
@@ -47,7 +68,7 @@ $ npm start
 ```
 
 <!-- Seção 5 : PROPS - Cominicação entre componentes ( FINALIZADO ) -->
-<h3 align="left">
+<h3 align="left" id="secao5">
    Seção 5 : PROPS - Cominicação entre componentes ( FINALIZADO )
 </h3>
 <p align="center">
