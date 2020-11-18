@@ -188,7 +188,7 @@ Autenticación con Firebase -->
 ```bash
 # Pasta do Projeto
 |- projeto-1
-  |- crud-firestore
+  |- login-udemy-1
 
 # Clone este repositório
 $ git clone https://github.com/brunoemferreira/React-JS-Desde-Cero-Hooks-Redux-Context-Firebase-y-m-s.git
@@ -197,7 +197,7 @@ $ git clone https://github.com/brunoemferreira/React-JS-Desde-Cero-Hooks-Redux-C
 $ cd projeto-1
 
 # vá para a pasta crud-simples-udemy
-$ cd crud-firestore
+$ cd login-udemy-1
 
 # Instale as dependências
 $ npm install
